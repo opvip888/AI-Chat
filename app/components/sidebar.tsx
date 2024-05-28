@@ -158,7 +158,7 @@ export function SideBar(props: { className?: string }) {
           Mercedes-Benz
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          禁止违规，违法内容.
+          禁止违法，违规内容.
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
