@@ -274,7 +274,7 @@ switch ($act) {
         'uptime' => 'VARCHAR(255) COLLATE utf8mb4_unicode_ci COMMENT "更新时间" ',
         'status' => 'INT(11) COMMENT "状态0为下架。1为上架" DEFAULT 1',
         'fenlei' => 'VARCHAR(11) COLLATE utf8mb4_unicode_ci COMMENT "分类" ',
-        'mall_custom' => 'MEDIUMTEXT COLLATE utf8mb4_unicode_ci DEFAULT "" ',
+        'mall_custom' => 'VARCHAR(255) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
       ),
       'qingka_wangke_dengji' => array(
         'id' => 'INT(11) AUTO_INCREMENT PRIMARY KEY',
@@ -294,7 +294,7 @@ switch ($act) {
         'sort' => 'INT(11) COLLATE utf8mb4_unicode_ci DEFAULT 0',
         'name' => 'VARCHAR(11) COLLATE utf8mb4_unicode_ci',
         'time' => 'VARCHAR(11) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
-        'mall_custom' => 'MEDIUMTEXT COLLATE utf8mb4_unicode_ci DEFAULT "" ',
+        'mall_custom' => 'VARCHAR(255) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
       ),
       'qingka_wangke_gongdan' => array(
         'gid' => 'INT(11) AUTO_INCREMENT PRIMARY KEY',
@@ -309,7 +309,7 @@ switch ($act) {
       'qingka_wangke_help' => array(
         'id' => 'INT(11) AUTO_INCREMENT PRIMARY KEY',
         'title' => 'VARCHAR(500) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
-        'content' => 'TEXT COLLATE utf8mb4_unicode_ci DEFAULT "" ',
+        'content' => 'VARCHAR(500) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
         'addTime' => 'VARCHAR(100) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
         'upTime' => 'VARCHAR(100) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
         'ip' => 'VARCHAR(50) COLLATE utf8mb4_unicode_ci DEFAULT "" ',
